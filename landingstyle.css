@@ -1,0 +1,24 @@
+
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 .07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}
+
+#qodef-page-outer { margin-top: -100px;}@media only screen and (max-width: 1024px) { #qodef-page-outer { margin-top: -70px;}}#qodef-page-inner { padding: 0px;}@media only screen and (max-width: 1024px) { #qodef-page-inner { padding: 0px;}}#qodef-page-header .qodef-header-logo-link { height: 24px;}#qodef-page-mobile-header .qodef-mobile-header-logo-link { height: 20px;}.qodef-page-title { height: 95px;background-image: url(https://deston.qodeinteractive.com/wp-content/uploads/2021/07/shop-title-img-2.jpg);}.qodef-page-title .qodef-m-content { padding-top: 100px;}.qodef-page-title .qodef-m-title { color: #ffffff;}@media only screen and (max-width: 1024px) { .qodef-page-title .qodef-m-content { padding-top: 70px;}}.qodef-header--standard #qodef-page-header { background-color: #5e9e95;}.qodef-header--standard #qodef-page-header-inner { padding-left: 60px;padding-right: 60px;}
+ 
+      /* latin-ext */
+      @font-face {
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 600;
+        font-display: swap;
+        src: url(/fonts.gstatic.com/s/montserrat/v18/JTURjIg1_i6t8kCHKm45_bZF3gfD_u50.woff2) format('woff2');
+        unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+      }
