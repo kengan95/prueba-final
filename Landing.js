@@ -36,7 +36,7 @@ class Landing extends React.Component {
     dibujarFormularioAgregar() {
         return (
             <div>
-                <button className="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+                <button className="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample" style={{marginBottom: "15px"}}>
                     Nueva categoría
                 </button>
                 <div className="collapse" id="collapseExample">

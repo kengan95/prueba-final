@@ -16,7 +16,7 @@ class Blog extends React.Component {
     }
 
     leerCategorias = () => {
-        const rutaServicio = "https://panda5691.000webhostapp.com/categorias.php";
+        const rutaServicio = "https://phpservicios.000webhostapp.com/categoria.php";
         fetch(rutaServicio)
             .then(
                 res => res.json()
@@ -34,7 +34,7 @@ class Blog extends React.Component {
     dibujarFormularioAgregar(){
         return(
             <div>
-                <button className="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+                <button className="btn btn-primary" type="submit" data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample" style={{background: "white", color: "black", border: "1px solid black", marginBottom: "10px"}}>
                     Nueva Mascota
                 </button>
                 <div className="collapse" id="collapseExample">
@@ -62,7 +62,7 @@ class Blog extends React.Component {
                              <button className="btn btn-primary" type="submit" data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
                              Guardar
                             </button>
-                            <button className="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+                            <button className="btn btn-primary" type="submit" data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample" style={{background: "black"}}>
                                 Cerrar
                             </button>
                         </div>
@@ -76,7 +76,7 @@ class Blog extends React.Component {
     categoriaInsertar = (e) => {
         e.preventDefault();//Evita que se vuelva a cargar la página con el evento onSubmit 
         console.log(this.state.nombremascotaAgregar);
-        const rutaServicio = "https://panda5691.000webhostapp.com/categoria-insertar.php";
+        const rutaServicio = "https://phpservicios.000webhostapp.com/categorias-insertar.php";
 
         var formData = new FormData();
         formData.append("nombremascota", this.state.nombremascotaAgregar);
@@ -107,7 +107,8 @@ class Blog extends React.Component {
 
     dibujarTabla(datosTabla){
         return(
-            <table className="table">
+            
+            <table className="table" style={{marginTop: "20px"}}>
                 <thead>
                     <tr>
                         <th>Cod</th>
